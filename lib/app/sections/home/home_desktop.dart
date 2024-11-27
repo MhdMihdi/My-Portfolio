@@ -13,7 +13,7 @@ import 'package:my_portfolio/core/animations/entrance_fader.dart';
 import 'package:my_portfolio/core/configs/configs.dart';
 
 class HomeDesktop extends StatelessWidget {
-  const HomeDesktop({Key? key}) : super(key: key);
+  const HomeDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {

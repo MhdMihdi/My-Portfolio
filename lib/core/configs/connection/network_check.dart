@@ -1,36 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:my_portfolio/app/sections/main/main_section.dart';
-import 'bloc/connected_bloc.dart';
+import 'bloc/connected_cubit.dart';
 
 class NChecking extends StatelessWidget {
-  const NChecking({Key? key}) : super(key: key);
+  const NChecking({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return BlocConsumer<ConnectedBloc, ConnectedState>(
+    return BlocConsumer<ConnectedCubit, ConnectedState>(
       listener: (context, state) {
-        // if (state is ConnectedSucessState) {
-        //   ScaffoldMessenger.of(context).showSnackBar(
-        //       const SnackBar(content: Text('Internet Connected')));
-        // } else if (state is ConnectedFailureState) {
-        //   ScaffoldMessenger.of(context)
-        //       .showSnackBar(const SnackBar(content: Text('Internet Lost')));
-        // }
+         if (state is ConnectedFailureState) {
+          ScaffoldMessenger.of(context)
+              .showSnackBar(
+                const SnackBar(
+                  content: Text('Internet Lost'),
+                  behavior: SnackBarBehavior.floating,
+                  ),
+
+              );
+        }
       },
       builder: (context, state) {
-        if (state is ConnectedSucessState) {
+        if (state is ConnectedSuccessState) {
           return const MainPage();
-          // return const MainScreen();
-        }
-        // else if (state is ConnectedFailureState) {
-        //   return const NoConnectionErorr();
-        // }
-        else {
-          // return Container();
-          // TODO
-          // return const NoConnectionErorr();
-          return const MainPage();
+        }else {
+          return const NoConnectionErorr();
         }
       },
     );
@@ -38,7 +33,7 @@ class NChecking extends StatelessWidget {
 }
 
 class NoConnectionErorr extends StatelessWidget {
-  const NoConnectionErorr({Key? key}) : super(key: key);
+  const NoConnectionErorr({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -57,4 +52,4 @@ class NoConnectionErorr extends StatelessWidget {
     );
   }
 }
-// TODO
+

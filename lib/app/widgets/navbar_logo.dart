@@ -3,7 +3,7 @@ import 'package:my_portfolio/core/configs/configs.dart';
 import 'package:my_portfolio/core/res/responsive.dart';
 
 class NavBarLogo extends StatelessWidget {
-  const NavBarLogo({Key? key}) : super(key: key);
+  const NavBarLogo({super.key});
 
   @override
   Widget build(BuildContext context) {

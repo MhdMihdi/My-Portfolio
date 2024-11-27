@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Footer extends StatelessWidget {
-  const Footer({Key? key}) : super(key: key);
+  const Footer({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class Footer extends StatelessWidget {
           children: [
             Text("Developed by "),
             Text(
-              " Mohammad Mihdi 💙",
+              " Mohammad Mihdi ",
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             Text(" © 2024"),

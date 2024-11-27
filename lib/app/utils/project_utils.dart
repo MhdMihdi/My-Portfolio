@@ -17,33 +17,33 @@ List<ProjectUtils> projectUtils = [
   ProjectUtils(
     banners: 'assets/imgs/02.png',
     icons: 'assets/imgs/flutter.png',
-    titles: 'Awesome Social Media App',
+    titles: 'Do It',
     description:
-        'This is a just Fully functional Social media App by using flutter, source code is also available, check below.',
-    links: 'https://github.com/sudeshnb/poetically-.git',
+        'A mobile application designed to help users manage daily tasks efficiently, source code is also available, check below.',
+    links: 'https://github.com/MhdMihdi/do_it.git',
   ),
   ProjectUtils(
     banners: 'assets/imgs/1.png',
     icons: 'assets/imgs/flutter.png',
-    titles: 'Awesome CRM UI',
+    titles: 'Disc',
     description:
-        'This is a just CRM UI Design using Figma, file is also available, check below.',
-    links: 'https://github.com/sudeshnb/',
+        'A platform to connect users with expert consultants for various issues., check below.',
+    links: 'https://github.com/',
   ),
   ProjectUtils(
     banners: 'assets/imgs/03.png',
     icons: 'assets/imgs/flutter.png',
-    titles: 'Exercise App',
+    titles: 'DevSpace',
     description:
-        'This is a just Fully function Exercise App by using flutter, source code is also available, check below.',
-    links: 'https://github.com/sudeshnb/elderly_exercise_app.git',
+        'A social networking app aimed at developers to share issues, ideas, and collaborate, source code is also available, check below.',
+    links: 'https://github.com/MhdMihdi/Social_Media.git',
   ),
   ProjectUtils(
     banners: 'assets/imgs/04.png',
     icons: 'assets/imgs/flutter.png',
-    titles: 'Awesome Plant App UI',
+    titles: 'Capital Estate',
     description:
-        'This is a just Plant App UI by using flutter, source code is also available, check below.',
-    links: 'https://github.com/sudeshnb/flutter_plant_app.git',
+        'A property management app that helps users search for and purchase real estate based on their needs, source code is also available, check below.',
+    links: 'https://gitlab.com/IT-Engineer-Project-001/real-estate_1.git',
   ),
 ];

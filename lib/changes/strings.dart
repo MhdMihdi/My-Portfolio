@@ -4,6 +4,7 @@ String yourname = "I'm Mohammad Mihdi,";
 // String hometitle2 = "A Mobile Application\nDeveloper";
 
 String animationtxt1 = " Mobile Application Developer";
+String animationtxt2 = " Web Application Developer";
 
 
 //
