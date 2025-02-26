@@ -28,6 +28,6 @@ List<TyperAnimatedText> mobileList = [
       textStyle: AppText.h2!.copyWith(fontSize: 16)),
     TyperAnimatedText(animationtxt2,
       speed: const Duration(milliseconds: 50),
-      textStyle: AppText.h2!.copyWith(fontSize: 32)),
+      textStyle: AppText.h2!.copyWith(fontSize: 16)),
 
 ];
